@@ -11,24 +11,55 @@
         align-items: center;
     }
   }
-
 .container {
+    position: relative;
     background-color: #021744;
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: white;
+    width: 100vw;
+    
+}
+.fundo {
+    position:relative;
+    height: 750px;
+    width: 100vw;
+    background-image: url(./dog2.jpg);
+    background-size: cover;
+    background-position-y: -250px; 
+    margin-top: 0px;
+}
+.lateral {
+    padding-top: 100px;
+    margin-left: 50px;
+    width: 500px;
+    text-align: justify;
+    font-family: 'Comfortaa', cursive;
+    color: #021744;
+    text-shadow: 1px 1px white;
+}
+.lateral :nth-child(1) {
+    font-size: 52px;
+    margin-bottom: 0;
+}
+.lateral :nth-last-child(1) {
+    font-size: 32px;
+    margin-top: 15px;
 }
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 .botoes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 300px;
+    height: 100px;
     flex-grow: 1;
     background-color: #1768ac;
     color: #03256c;
@@ -45,10 +76,12 @@
 h1 {
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
+    font-size: 40px;
 }
 h2 {
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
+    font-size: 32px;
 }
 nav {
     display: flex;
