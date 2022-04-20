@@ -12,7 +12,7 @@
     }
   }
 .container {
-    position: relative;
+    position: absolute;
     background-color: #021744;
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -21,37 +21,40 @@
     
 }
 .fundo {
-    position:relative;
+    position:static;
     height: 750px;
     width: 100vw;
     background-image: url(./dog2.jpg);
     background-size: cover;
     background-position-y: -250px; 
-    margin-top: 0px;
+    margin-top: 100px;
 }
 .lateral {
     padding-top: 100px;
     margin-left: 50px;
     width: 500px;
-    text-align: justify;
+    /* text-align: justify; */
     font-family: 'Comfortaa', cursive;
     color: #021744;
-    text-shadow: 1px 1px white;
+    /* text-shadow: 1px 1px white; */
 }
 .lateral :nth-child(1) {
-    font-size: 52px;
+    font-size: 44px;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
-.lateral :nth-last-child(1) {
-    font-size: 32px;
+.lateral :nth-child(2) {
+    font-size: 26px;
     margin-top: 15px;
 }
 .nav {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 0;
 }
 .botoes {
     display: flex;
@@ -61,7 +64,7 @@
     width: 300px;
     height: 100px;
     flex-grow: 1;
-    background-color: #1768ac;
+    background-color: #2fb9ecdc;
     color: #03256c;
     transform-origin: center center;
 }
@@ -72,6 +75,7 @@
     padding-left: 10px;
     flex-grow: 6;
     transform-origin: center left;
+    padding-left: 20px;
 }
 h1 {
     margin-block-start: 0.4em;
@@ -93,22 +97,121 @@ nav {
 .logo:hover {
     transform: scale(1.1);
     transition: transform .2s;
+    cursor: pointer;
 }
 .b1:hover {
     color:  #06aae1;
     transform: scale(1.1);
     transition: transform .2s;
+    cursor: pointer;
 }
 .b2:hover {                                     
     color:  #06aae1;
     transform: scale(1.1);
     transition: transform .2s;
+    cursor: pointer;
 }
 .b3:hover {
     color:  #06aae1;
     transform: scale(1.1);
     transition: transform .2s;
+    cursor: pointer;
 }
 .b4 {
     flex-grow: 1;
+}
+
+/* From uiverse.io */
+button {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    position: relative;
+   }
+
+   button.comece-agora {
+    width: 20rem;
+    height: auto;
+   }
+   
+   button.comece-agora .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #03256c;
+    border-radius: 1.625rem;
+    margin-top: 20px;
+   }
+   
+   button.comece-agora .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.comece-agora .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.comece-agora .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.comece-agora .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.60rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #021744;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+div.text {
+    margin-top: 2800px;
 }
