@@ -1,16 +1,3 @@
-@media only screen and (max-width: 700px) {
-    .logo {
-      display: none;
-    }
-    .b4 {
-        display: none;
-    }
-    nav .botoes {
-        height: 150px;
-        flex-direction: column;
-        align-items: center;
-    }
-  }
 .container {
     position: absolute;
     background-color: #021744;
@@ -22,7 +9,7 @@
 }
 .fundo {
     position: static;
-    height: 750px;
+    height: 950px;
     width: 100vw;
     background-image: url(./dog2.jpg);
     background-size: cover;
@@ -33,10 +20,8 @@
     padding-top: 100px;
     margin-left: 50px;
     width: 500px;
-    /* text-align: justify; */
     font-family: 'Comfortaa', cursive;
     color: #021744;
-    /* text-shadow: 1px 1px white; */
 }
 .lateral :nth-child(1) {
     font-size: 44px;
@@ -79,7 +64,6 @@ figure img {
     width: 300px;
     height: 400px;
     padding-top: 50px;
-    border-radius: 10px;
 }
 main.pets-table {
     align-items: center;
@@ -166,19 +150,19 @@ nav {
     cursor: pointer;
 }
 .b1:hover {
-    color:  #06aae1;
+    color:  white;
     transform: scale(1.1);
     transition: transform .2s;
     cursor: pointer;
 }
 .b2:hover {                                     
-    color:  #06aae1;
+    color:  white;
     transform: scale(1.1);
     transition: transform .2s;
     cursor: pointer;
 }
 .b3:hover {
-    color:  #06aae1;
+    color:  white;
     transform: scale(1.1);
     transition: transform .2s;
     cursor: pointer;
@@ -186,8 +170,6 @@ nav {
 .b4 {
     flex-grow: 1;
 }
-
-/* From uiverse.io */
 button {
     display: inline-block;
     cursor: pointer;
@@ -281,3 +263,126 @@ button {
 div.text {
     margin-top: 2800px;
 }
+.button-static {
+    display: static;
+}
+@media only screen and (max-width: 700px) {
+    .logo {
+      display: none;
+    }
+    .b4 {
+        display: none;
+    }
+    .container {
+        display: absolute;
+    }
+    nav .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        background-color: #2fb9ecdc;
+        color: #03256c;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    nav.nav {
+        position: relative;
+        display: flex;
+        margin: 0;
+    }
+
+    div.fundo {
+        position: static;
+        height: 500px;
+        width: 100vw;
+        background-image: url(./dog2.jpg);
+        background-size: cover;
+        background-position-y: 0px; 
+        margin-top: 100px;
+    }
+    .button-static {
+        display: none;
+    }
+    header.lateral {
+        display: flex;
+        padding: 0px;
+        padding-left: 20px;
+        margin: 0px;
+        width: 400px;
+        font-family: 'Comfortaa', cursive;
+        color: #021744;
+    }
+    .lateral p {
+        font-size: 32px ;
+    }
+    .lateral :nth-child(2) {
+        display: none;
+    }
+    .conheca {
+        padding-top: 0px ;
+        font-size: 20px ;
+    }
+    main {
+        align-items: flex-start ;
+        justify-content: center;
+        width: 50vw ;
+        height: 1000px ;
+        flex-wrap: wrap;
+        margin: 0 ;
+    }
+    figure img {
+        width: 200px ;
+        height: 300px ;
+        padding-top: 0px ;
+    }
+    main.pets-table {
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 200px ;
+    }
+    .descricao {
+        position: absolute;
+        height: 1000px ;
+        width: 40vw ;
+        flex-wrap: nowrap ;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-around;
+        margin-top: 100px ;
+        margin-left: 400px ;
+        width: 60vw;
+    }
+    .paragrafo {
+        margin-left: 200px ;
+        flex-direction: column ;
+        height: 700px ;
+        width: 40vw ;
+        height: 100px;
+        text-align: left ;
+        width: 250px;
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+    .rodape {
+        display: flex;
+        height: 200px;
+        margin: 0 auto;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        padding-top: 40px;
+        font-size: 18px;
+        background-color: rgb(37, 37, 37);
+        justify-content: space-evenly;
+    }
+    .email {
+        width: 200px;
+        text-align: center;
+    }
+    .rodape1 {
+        width: 110px;
+    }
+  }
