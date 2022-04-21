@@ -10,7 +10,7 @@
 .fundo {
     position: static;
     width: 100vw;
-    height: 950px;
+    height: 750px;
     background-image: url(./dog2.jpg);
     background-size: cover;
     background-position-y: -250px; 
